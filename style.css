@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+
+.background {
+    background-color: hsl(0, 0%, 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+    padding: 80px;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-size: 1300px, 1100px;
+    background-position: -200% 250%, 150% -250%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.rating__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    width: 350px;
+    font-size: 50px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 15px;
+}
+
+.sub_head {
+    width: 300px;
+    font-size: 17px;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.contain {
+    background-color: hsl(300, 24%, 96%);
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 8px 0px 8px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.imgs {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    margin-right: 5px;
+}
+
+.text {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    margin-left: 15px;
+}
+
+#reviews {
+    margin-right: 80px;
+}
+
+#guru {
+    margin-right: 40px;
+}
+
+.card {
+    /* width: 1000px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes {
+    width: 300px;
+    height: 200px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.txt {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.txt_head {
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.txt_subhead {
+    color: hsl(333, 80%, 67%);
+    font-size: 12px;
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 15px;
+    margin: 1px;
+}
+
+#smith {
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+#roberts {
+    margin-top: -15px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .background {
+        overflow: auto;
+        height: 100%;
+        padding: 10px;
+    }
+
+
+    .horizontal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .first {
+        text-align: center;
+        /* margin-left: 10px; */
+    }
+
+    .head {
+        font-size: 45px;
+    }
+
+    .sub_head {
+        margin-left: 10px;
+    }
+
+    .container {
+        margin-right: 30px;
+        /* flex-direction: column; */
+    }
+
+    .text {
+        margin-top: 10px;
+    }
+
+    .contain {
+        width: 300px;
+        height: 60px;
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+        width: 100%;
+    }
+
+    .boxes {
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+    }
+
+    .txt {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .paragraph {
+        margin: 1px;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    #reviews {
+        margin-right: 0;
+    }
+
+    #guru {
+        margin-right: 0;
+    }
+
+    #anne {
+        margin-top: -10px;
+    }
+
+    #smith {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    #roberts {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
